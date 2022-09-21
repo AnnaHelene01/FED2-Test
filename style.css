@@ -1,14 +1,14 @@
+
+
 a {
   text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
 
-/* Style for contact form - right and left*/
-.contact-left {
-    flex-basis: 35%;
-}
-
-.contact-right {
-    flex-basis: 60%;
+/* Style for contact form */
+.contact-form {
+    height: 600px;
+    background-color: pink;
+    border: 20px;
 }
