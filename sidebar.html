@@ -12,28 +12,33 @@
     <link rel="stylesheet" href="style.css">
     <style>
           .section {
-            width: 100vw;
+            width: auto;
             margin: 10px 5px;
         }
 
-        @media screen {
-          
+        main  {
+          margin-left: 300px;
         }
+
+        .img-width {
+          max-height: 300px;
+          width: auto;
+        }
+
     </style>
 </head>
   <body>
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <div id="grid" class="">
+      <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
 
-  <header id="header">
+  <header id="header" class="">
     <div class="d-flex flex-column">
-
       <div class="profile">
         <img src="annaportrett2.png" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Anna Helene Sæthre</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> <!--LEGG TIL IKONER-->
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
           <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -51,197 +56,205 @@
       </nav>
     </div>
   </header>
-  <!-- ======= HOME Section ======= -->
-  <section id="home" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="w-100 h-50" data-aos="fade-in">
-      <h1>Anna Helene Sæthre</h1>
-      <p>Im a Frontend developer</p>
-    </div>
-  </section><!-- End HOME -->
-  <!-- ABOUT SECTION-->
-  <section id="about" class="section">
-          <div class="container">
-            <div class="section-title">
-              <h2>About</h2>
-              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+ 
+ <!-- ==== MAIN ONTENT ===== -->
+  <main>
+     <!-- ======= HOME Section ======= -->
+    <section id="home" class="section">
+        <div class="container">
+           <h1>Anna Helene Sæthre</h1>
+           <p>Im a Frontend developer</p>
+        </div>
+    </section><!-- End HOME -->
+     <!-- ABOUT SECTION-->
+    <section id="about" class="section">
+        <div class="container">
+        <div class="section-title">
+            <h2>About</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4" data-aos="fade-right">
+                <img src="annaportrett2.png" class="img-width img-fluid" alt="Portrett bilde av Anna">
             </div>
-    
-            <div class="row">
-              <div class="col-lg-4" data-aos="fade-right">
-                <img src="annaportrett2.png" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
                 <h3>Frontend Developer</h3>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                 magna aliqua.
                 </p>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <ul>
-                      <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>4 September 2001</span></li>
-                      <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                      <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+47 940 37 139</span></li>
-                      <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bergen</span></li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-6">
+                   <ul>
+                     <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>4 September 2001</span></li>
+                     <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                     <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+47 940 37 139</span></li>
+                     <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bergen</span></li>
+                   </ul>
+                </div>
+                 <div class="col-lg-6">
                     <ul>
                       <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
                       <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Frontend developer at Noroff</span></li>
                       <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>annahelene2001@gmail.com</span></li>
                       <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                     </ul>
-                  </div>
-                </div>
-                <p>
-                  Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                  Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                </p>
-              </div>
+                 </div>
             </div>
-          </div>
-  </section>
-  <section id="resume" class="section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Anna Helene Sæthre</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Bergen, Norway</li>
-                <li>+47 940 37 139</li>
-                <li>annahelene2001@gmail.com</li>
-              </ul>
+            <p>
+              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+            </p>
             </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Frontend developing</h4>
-              <h5>2021 - 2023</h5>
-              <p><em>Noroff, Bergen</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div>
-            <div class="resume-item">
-              <h4>Highschool</h4>
-              <h5>2017 - 2020</h5>
-              <p><em>Brønnøysund videregående skole, Brønnøysund</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-  </section>
-  <section id="#portfolio" class="portfolio section-bg">
-    <div class="container">
-      <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>You will find my biggest projects so far in this section. You can either pick to see the picture in a modal, or go to a 
-          detailed site about the 
-          project if you want to read more about it.
-        </p>
-      </div>
-
-      <div class="row" data-aos="fade-up">
-        <div class="col-lg-12 d-flex justify-content-center">
-             <div class="button-group" role="group">
-                  <button type="button" class="btn btn-primary m-1">ALL</button>
-                  <button type="button" class="btn btn-primary m-1">PROJECT 1</button>
-                  <button type="button" class="btn btn-primary m-1">PROJECT 2</button>
-                  <button type="button" class="btn btn-primary m-1">PROJECT 3</button>
-                  <button type="button" class="btn btn-primary m-1">PROJECT 4</button>
-                  <button type="button" class="btn btn-primary m-1">PROJECT 5</button>
-             </div>
         </div>
       </div>
+</section>
+<section id="resume" class="section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Resume</h2>
+      <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    </div>
 
-      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="product-example.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="product-example.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
+    <div class="row">
+      <div class="col-lg-6" data-aos="fade-up">
+        <h3 class="resume-title">Sumary</h3>
+        <div class="resume-item pb-0">
+          <h4>Anna Helene Sæthre</h4>
+          <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+          <ul>
+            <li>Bergen, Norway</li>
+            <li>+47 940 37 139</li>
+            <li>annahelene2001@gmail.com</li>
+          </ul>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="product-example.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="product-example.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
+        <h3 class="resume-title">Education</h3>
+        <div class="resume-item">
+          <h4>Frontend developing</h4>
+          <h5>2021 - 2023</h5>
+          <p><em>Noroff, Bergen</em></p>
+          <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
         </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="product-example.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="product-example.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
+        <div class="resume-item">
+          <h4>Highschool</h4>
+          <h5>2017 - 2020</h5>
+          <p><em>Brønnøysund videregående skole, Brønnøysund</em></p>
+          <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
         </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="product-example.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="product-example.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="resume-title">Professional Experience</h3>
+        <div class="resume-item">
+          <h4>Senior graphic design specialist</h4>
+          <h5>2019 - Present</h5>
+          <p><em>Experion, New York, NY </em></p>
+          <ul>
+            <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+            <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
+            <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+            <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+          </ul>
         </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="product-example.jpeg" class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="product-example.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
+        <div class="resume-item">
+          <h4>Graphic design specialist</h4>
+          <h5>2017 - 2018</h5>
+          <p><em>Stepping Stone Advertising, New York, NY</em></p>
+          <ul>
+            <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+            <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+            <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+            <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+          </ul>
         </div>
       </div>
     </div>
-  </section><!-- End Portfolio Section -->
+
+  </div>
+</section>
+<section id="#portfolio" class="section">
+<div class="container">
+  <div class="section-title">
+    <h2>Portfolio</h2>
+    <p>You will find my biggest projects so far in this section. You can either pick to see the picture in a modal, or go to a 
+      detailed site about the 
+      project if you want to read more about it.
+    </p>
+  </div>
+
+  <div class="row" data-aos="fade-up">
+    <div class="col-lg-12 d-flex justify-content-center">
+         <div class="button-group" role="group">
+              <button type="button" class="btn btn-primary m-1">ALL</button>
+              <button type="button" class="btn btn-primary m-1">PROJECT 1</button>
+              <button type="button" class="btn btn-primary m-1">PROJECT 2</button>
+              <button type="button" class="btn btn-primary m-1">PROJECT 3</button>
+              <button type="button" class="btn btn-primary m-1">PROJECT 4</button>
+              <button type="button" class="btn btn-primary m-1">PROJECT 5</button>
+         </div>
+    </div>
+  </div>
+
+  <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+      <div class="portfolio-wrap">
+        <img src="product-example.jpeg" class="img-fluid" alt="">
+        <div class="portfolio-links">
+          <a href="product-example.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="portfolio-wrap">
+        <img src="product-example.jpeg" class="img-fluid" alt="">
+        <div class="portfolio-links">
+          <a href="product-example.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="portfolio-wrap">
+        <img src="product-example.jpeg" class="img-fluid" alt="">
+        <div class="portfolio-links">
+          <a href="product-example.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="portfolio-wrap">
+        <img src="product-example.jpeg" class="img-fluid" alt="">
+        <div class="portfolio-links">
+          <a href="product-example.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <div class="portfolio-wrap">
+        <img src="product-example.jpeg" class="img-fluid" alt="">
+        <div class="portfolio-links">
+          <a href="product-example.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+          <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section><!-- End Portfolio Section -->
+
+  </main>
+    </div>
+  <!-- ======= Mobile nav toggle button ======= -->
+  
+  
 
 
     <!-- JavaScript Bundle with Popper 
