@@ -10,10 +10,11 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <style>
           .section {
             width: auto;
-            margin: 10px 5px;
+            margin: 30px 5px;
         }
 
         main  {
@@ -21,10 +22,17 @@
         }
 
         .img-width {
-          max-height: 300px;
+          max-width: 300px;
           width: auto;
         }
 
+        .blue {
+          color: #173b6c;
+        }
+
+        .peach {
+          color: #EEA47FFF;
+        }
     </style>
 </head>
   <body>
@@ -70,14 +78,14 @@
     <section id="about" class="section">
         <div class="container">
         <div class="section-title">
-            <h2>About</h2>
+            <h2 class="blue">About</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
         <div class="row">
             <div class="col-lg-4" data-aos="fade-right">
                 <img src="annaportrett2.png" class="img-width img-fluid" alt="Portrett bilde av Anna">
             </div>
-            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <div class="col-lg-8 pt-4 pt-lg-0 content">
                 <h3>Frontend Developer</h3>
                 <p class="fst-italic">
                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -112,7 +120,7 @@
 <section id="resume" class="section">
   <div class="container">
     <div class="section-title">
-      <h2>Resume</h2>
+      <h2 class="blue">Resume</h2>
       <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
     </div>
 
@@ -175,7 +183,7 @@
 <section id="#portfolio" class="section">
 <div class="container">
   <div class="section-title">
-    <h2>Portfolio</h2>
+    <h2 class="blue">Portfolio</h2>
     <p>You will find my biggest projects so far in this section. You can either pick to see the picture in a modal, or go to a 
       detailed site about the 
       project if you want to read more about it.
@@ -185,12 +193,12 @@
   <div class="row" data-aos="fade-up">
     <div class="col-lg-12 d-flex justify-content-center">
          <div class="button-group" role="group">
-              <button type="button" class="btn btn-primary m-1">ALL</button>
-              <button type="button" class="btn btn-primary m-1">PROJECT 1</button>
-              <button type="button" class="btn btn-primary m-1">PROJECT 2</button>
-              <button type="button" class="btn btn-primary m-1">PROJECT 3</button>
-              <button type="button" class="btn btn-primary m-1">PROJECT 4</button>
-              <button type="button" class="btn btn-primary m-1">PROJECT 5</button>
+              <button type="button" id="btn-all" class="btn btn-primary m-1">ALL</button>
+              <button type="button" id="btn-project1" class="btn btn-primary m-1">PROJECT 1</button>
+              <button type="button" id="btn-project2" class="btn btn-primary m-1">PROJECT 2</button>
+              <button type="button" id="btn-project3" class="btn btn-primary m-1">PROJECT 3</button>
+              <button type="button" id="btn-project4" class="btn btn-primary m-1">PROJECT 4</button>
+              <button type="button" id="btn-project5" class="btn btn-primary m-1">PROJECT 5</button>
          </div>
     </div>
   </div>
@@ -199,7 +207,12 @@
 
     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
       <div class="portfolio-wrap">
-        <img src="product-example.jpeg" class="img-fluid" alt="">
+        <div class="img-hover">
+          <img src="product-example.jpeg" id="img-project1" class="img-fluid mt-4" alt="">
+          <button id="modal-project1">CLICK ME</button>
+        </div>
+        <div id="myModal" class="modal">
+        </div>
         <div class="portfolio-links">
           <a href="product-example.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
           <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -209,8 +222,10 @@
 
     <div class="col-lg-4 col-md-6">
       <div class="portfolio-wrap">
-        <img src="product-example.jpeg" class="img-fluid" alt="">
-        <div class="portfolio-links">
+        <div class="img-hover">
+          <img src="product-example.jpeg" id="img-project2" class="img-fluid mt-4" alt="">
+          <button>CLICK ME</button>
+        </div>        <div class="portfolio-links">
           <a href="product-example.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
           <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
         </div>
@@ -219,8 +234,10 @@
 
     <div class="col-lg-4 col-md-6">
       <div class="portfolio-wrap">
-        <img src="product-example.jpeg" class="img-fluid" alt="">
-        <div class="portfolio-links">
+        <div class="img-hover">
+          <img src="product-example.jpeg" id="img-project3" class="img-fluid mt-4" alt="">
+          <button>CLICK ME</button>
+        </div>        <div class="portfolio-links">
           <a href="product-example.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
           <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
         </div>
@@ -229,8 +246,10 @@
 
     <div class="col-lg-4 col-md-6">
       <div class="portfolio-wrap">
-        <img src="product-example.jpeg" class="img-fluid" alt="">
-        <div class="portfolio-links">
+        <div class="img-hover">
+          <img src="product-example.jpeg" id="img-project4" class="img-fluid mt-4" alt="">
+          <button>CLICK ME</button>
+        </div>        <div class="portfolio-links">
           <a href="product-example.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
           <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
         </div>
@@ -239,8 +258,10 @@
 
     <div class="col-lg-4 col-md-6">
       <div class="portfolio-wrap">
-        <img src="product-example.jpeg" class="img-fluid" alt="">
-        <div class="portfolio-links">
+        <div class="img-hover">
+          <img src="product-example.jpeg" id="img-project5" class="img-fluid mt-4" alt="">
+          <button>CLICK ME</button>
+        </div>        <div class="portfolio-links">
           <a href="product-example.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
           <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
         </div>
@@ -249,7 +270,6 @@
   </div>
 </div>
 </section><!-- End Portfolio Section -->
-
   </main>
     </div>
   <!-- ======= Mobile nav toggle button ======= -->

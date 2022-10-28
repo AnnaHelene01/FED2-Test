@@ -164,3 +164,40 @@ a {
 .mobile-nav-active #header {
   left: 0;
 }
+
+
+
+
+/* PORTOFOLIO BILDE M KNAPP - HOVER*/
+.img-hover {
+  position: relative;  
+  width:100%;
+}
+.img-hover:before {
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+top:0;left:0;right:0;
+background-color:rgba(0,0,0,0);
+}
+.img-hover:hover::before {
+background-color:rgba(0,0,0,0.5);
+}
+.img-hover img {
+display:block;
+}
+.img-hover button {
+position: absolute;
+top: 90%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+opacity:0;
+} 
+.img-hover:hover button {   
+opacity: 1;
+}
+
+
+
